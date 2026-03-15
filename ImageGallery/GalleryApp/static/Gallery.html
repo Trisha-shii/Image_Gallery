@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fav</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <h1>My Favorite Movies</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="Images/MOVIE 1.jpg"
+            alt="LIKE STARS ON EARTH">
+        <img src="Images/MOVIE 2.jpg"
+            alt="LAAPATA LADIES">
+        <img src="Images/MOVIE 3.jpg"
+            alt="3 IDIOTS">
+        <img src="Images/MOVIE 4.jpg"
+            alt="CHHICHHORE">
+        <img src="Images/MOVIE 5.jpg"
+            alt="SECRET SUPERSTAR">
+        <img src="Images/MOVIE 6.jpg"
+            alt="DANGAL">  
+        <img src="Images/MOVIE 7.jpg"
+            alt="BAJRANGI BHAIJAAN">
+        <img src="Images/MOVIE 8.jpg"
+            alt="BHOOTHNATH">  
+        <img src="Images/MOVIE 9.jpg"
+            alt="SAIYAARA">
+        <img src="Images/MOVIE 10.jpg"
+            alt="DEAR ZINDAGI">
+        <img src="Images/MOVIE 11.jpg"
+            alt="TRAIN TO BUSAN">
+        <img src="Images/MOVIE 12.jpg"
+            alt="MOM">
+        <img src="Images/MOVIE 13.jpg"
+            alt="ENGLISH VINGLISH">
+        <img src="Images/MOVIE 14.jpg"
+            alt="PK">
+    </div>
+
+    <div id="lightbox">
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <div id="thumbnail-container">
+        </div>
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="Gallery.js"></script>
+
+</body>
+</html>
